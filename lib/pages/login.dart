@@ -7,10 +7,10 @@ class ClassLogin extends StatefulWidget {
   final String title;
 
   @override
-  State<ClassLogin> createState() => _LoginPage();
+  State<ClassLogin> createState() => _LoginPageState();
 }
 
-class _LoginPage extends State<ClassLogin> {
+class _LoginPageState extends State<ClassLogin> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
