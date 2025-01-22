@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unidades_moveis_app/style/custom_drawer.dart';
 
 class ClassHome extends StatefulWidget {
   const ClassHome({super.key});
@@ -12,7 +13,7 @@ class _ClassHomeState extends State<ClassHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 33, 50, 99),
-      drawer: Drawer(),
+      drawer: CustomDrawer(),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 154, 181, 213),
         title: Row(
