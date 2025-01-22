@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unidades_moveis_app/pages/login.dart';
 import 'pages/home.dart';
 
 void main() {
@@ -16,7 +17,9 @@ class MyApp extends StatelessWidget {
         //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ClassHome(),
+      home: const ClassLogin(
+        title: "Login Page",
+      ),
     );
   }
 }

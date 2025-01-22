@@ -51,13 +51,13 @@ class _ClassHomeState extends State<ClassHome> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(10, 0, 20, 0),
                         child: CircleAvatar(
+                          maxRadius: 40,
+                          backgroundColor: Color.fromARGB(255, 33, 50, 99),
                           child: Icon(
                             Icons.commute_outlined,
                             size: 60,
                             color: Colors.white,
                           ),
-                          maxRadius: 40,
-                          backgroundColor: Color.fromARGB(255, 33, 50, 99),
                         ),
                       ),
                       Expanded(
@@ -92,13 +92,13 @@ class _ClassHomeState extends State<ClassHome> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(10, 0, 20, 0),
                         child: CircleAvatar(
+                          maxRadius: 40,
+                          backgroundColor: Color.fromARGB(255, 33, 50, 99),
                           child: Icon(
                             Icons.person_add_alt,
                             size: 60,
                             color: Colors.white,
                           ),
-                          maxRadius: 40,
-                          backgroundColor: Color.fromARGB(255, 33, 50, 99),
                         ),
                       ),
                       Expanded(
@@ -133,13 +133,13 @@ class _ClassHomeState extends State<ClassHome> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(10, 0, 20, 0),
                         child: CircleAvatar(
+                          maxRadius: 40,
+                          backgroundColor: Color.fromARGB(255, 33, 50, 99),
                           child: Icon(
                             Icons.list_alt,
                             size: 60,
                             color: Colors.white,
                           ),
-                          maxRadius: 40,
-                          backgroundColor: Color.fromARGB(255, 33, 50, 99),
                         ),
                       ),
                       Expanded(
@@ -174,13 +174,13 @@ class _ClassHomeState extends State<ClassHome> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(10, 0, 20, 0),
                         child: CircleAvatar(
+                          maxRadius: 40,
+                          backgroundColor: Color.fromARGB(255, 33, 50, 99),
                           child: Icon(
                             Icons.check_circle_outline_sharp,
                             size: 60,
                             color: Colors.white,
                           ),
-                          maxRadius: 40,
-                          backgroundColor: Color.fromARGB(255, 33, 50, 99),
                         ),
                       ),
                       Expanded(
