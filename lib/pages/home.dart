@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unidades_moveis_app/pages/travel.dart';
 import 'package:unidades_moveis_app/style/custom_drawer.dart';
 
 class ClassHome extends StatefulWidget {
@@ -37,9 +38,12 @@ class _ClassHomeState extends State<ClassHome> {
               padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
               child: TextButton(
                 onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("Vai abrir a tela de viagens")),
-                  );
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ClassTravel(
+                                title: 'Travel Page',
+                              )));
                 },
                 child: Container(
                   height: 100,
