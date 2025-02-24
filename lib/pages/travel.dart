@@ -14,6 +14,13 @@ class ClassTravel extends StatefulWidget {
 class _TravelPageState extends State<ClassTravel> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  String carPlate = "Veículo - Placa";
+
+  void funcSelectCarPlate(String newCarPlate) {
+    setState(() {
+      carPlate = newCarPlate;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,25 +55,25 @@ class _TravelPageState extends State<ClassTravel> {
                       color: const Color.fromARGB(255, 146, 168, 230)),
                   child: ExpansionTile(
                     title: Text(
-                      "Veículo - Placa",
+                      carPlate,
                       style: TextStyle(fontSize: 20, color: Colors.black),
                     ),
                     children: <Widget>[
                       ListTile(
                         title: Text("Argo www-7w77"),
-                        onTap: () => () {},
+                        onTap: () => funcSelectCarPlate("Argo www-7w77"),
                       ),
                       ListTile(
                         title: Text("Argo www-8w88"),
-                        onTap: () => () {},
+                        onTap: () => funcSelectCarPlate("Argo www-8w88"),
                       ),
                       ListTile(
                         title: Text("Argo www-9w99"),
-                        onTap: () => () {},
+                        onTap: () => funcSelectCarPlate("Argo www-9w99"),
                       ),
                       ListTile(
                         title: Text("Argo www-1w11"),
-                        onTap: () => () {},
+                        onTap: () => funcSelectCarPlate("Argo www-1w11"),
                       ),
                     ],
                   ),
